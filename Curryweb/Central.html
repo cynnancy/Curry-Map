@@ -19,7 +19,7 @@
         <header>
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
                 <span class="site-heading-upper text-primary mb-3">Find Your Destined Curry</span>
-                <span class="site-heading-lower">Curry Map</span>
+                <span class="site-heading-lower"><a class="nav-link text-uppercase" href="Curry.php">Curry Map</span>
             </h1>
         </header>
         <!-- Navigation-->
