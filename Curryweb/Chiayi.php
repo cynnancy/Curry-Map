@@ -48,24 +48,29 @@
             <div class=" container">
                 <div class="row">
                     <div class="col-xl-9 mx-auto">
-                        <!-- <div class="cta-inner bg-faded text-center rounded"><span class="text-start">店名</span><span>嘉義市</span></div> -->
-                        <div class="cta-inner bg-faded text-center rounded" data-accordion-trigger="">
-                            <span>嘉義市 / 西區</span>
-                        <!-- <div class="lStore-info-title"> -->
-                            <h3>向午粮品 手作料理
-                            <button style="border:none" href="#toggle-animation" class="uk-button-link" type="button" uk-toggle="target: #toggle-animation; animation: uk-animation-fade"><i class="fa-solid fa-plus"></i></button></h3>
-                                <hr size="3" color="#411D00"> <!--中間分隔線-->
-                            <div id="toggle-animation" class="uk-card uk-card-default uk-card-body uk-margin-small" target="True">
-                                <!-- <i class="fa-solid fa-location-dot"></i> google map icon -->
-                                <a class="lStore-info-link" href="https://goo.gl/maps/T45zC7GNoaerhCgn9" target="_blank">600024嘉義市西區建成街20號</a>
-                            </div>
-                            <div id="toggle-animation" class="uk-card uk-card-default uk-card-body uk-margin-small">
-                                <a href="https://www.facebook.com/%E5%90%91%E5%8D%88%E7%B2%AE%E5%93%81-110761128126965/" target="_blank" class="uk-margin-small-right"><i class="fab fa-facebook-f"></i></a>
-                            </div>
-                            <div id="toggle-animation" class="uk-card uk-card-default uk-card-body uk-margin-small">
-                                <span class="uk-margin-small-right" uk-icon="reciver"></span>
-                                    <a href="tel:0979 570 668">0979 570 668</a>
-                            </div>
+                       <!-- data-accordion-trigger="" <div class="cta-inner bg-faded text-center rounded"><span class="text-start">店名</span><span>嘉義市</span></div> -->
+                        <div class="cta-inner bg-faded text-center rounded" >
+                        <ul uk-accordion>
+                            <!-- class="uk-open" -->
+                            <li >
+                                <span>嘉義市 / 西區</span>
+                                <a class="uk-accordion-title" href="#">向午粮品 手作料理</a>
+                                <div class="uk-accordion-content">
+                                    <hr size="3" color="#411D00"> <!--中間分隔線-->
+                                        <div  class="uk-card uk-card-default uk-card-body uk-margin-small">
+                                            <a href="https://goo.gl/maps/T45zC7GNoaerhCgn9" target="_blank">600024嘉義市西區建成街20號</a>
+                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                                        </div>
+                                        <div class="uk-card uk-card-default uk-card-body uk-margin-small">
+                                             <a href="https://www.facebook.com/%E5%90%91%E5%8D%88%E7%B2%AE%E5%93%81-110761128126965/" target="_blank" class="uk-margin-small-right"><i class="fab fa-facebook-f"></i></a>
+                                        </div>
+                                        <div class="uk-card uk-card-default uk-card-body uk-margin-small">
+                                            <span class="uk-margin-small-right" uk-icon="reciver"></span>
+                                            <a href="tel:0979 570 668">0979 570 668</a>
+                                        </div>
+                                </div> 
+                            </li>
+                        </ul> 
                         </div>
                     </div>
                 </div>
