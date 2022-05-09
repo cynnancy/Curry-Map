@@ -10,7 +10,7 @@
         <title>Curry Map-Chiayi</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"> </script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
@@ -70,7 +70,35 @@
                                         </div>
                                 </div> 
                             </li>
-                        </ul> 
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                       <!-- data-accordion-trigger="" <div class="cta-inner bg-faded text-center rounded"><span class="text-start">店名</span><span>嘉義市</span></div> -->
+                        <div class="cta-inner bg-faded text-center rounded" >
+                        <ul uk-accordion>
+                            <!-- class="uk-open" -->
+                            <li >
+                                <span>嘉義市 / 西區</span>
+                                <a class="uk-accordion-title" href="#">泰泰小姐</a>
+                                <div class="uk-accordion-content">
+                                    <hr size="3" color="#411D00"> <!--中間分隔線-->
+                                        <div  class="uk-card uk-card-default uk-card-body uk-margin-small">
+                                            <a href="https://goo.gl/maps/iSRuPG33LDVbMTyz6" target="_blank">600嘉義市西區仁愛路105號</a>
+                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                                        </div>
+                                        <div class="uk-card uk-card-default uk-card-body uk-margin-small">
+                                             <a href="https://www.facebook.com/%E6%B3%B0%E6%B3%B0%E5%B0%8F%E5%A7%90-1081551008681596/?ref=bookmarks" target="_blank" class="uk-margin-small-right"><i class="fab fa-facebook-f"></i></a>
+                                        </div>
+                                        <div class="uk-card uk-card-default uk-card-body uk-margin-small">
+                                            <span class="uk-margin-small-right" uk-icon="reciver"></span>
+                                            <a href="tel:0967 130 005">0967 130 005</a>
+                                        </div>
+                                </div> 
+                            </li>
+                        </ul>
                         </div>
                     </div>
                 </div>
