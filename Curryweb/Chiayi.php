@@ -52,9 +52,9 @@
                         <div class="cta-inner bg-faded text-center rounded" >
                         <ul uk-accordion>
                             <!-- class="uk-open" -->
-                            <li >
-                                <span>嘉義市 / 西區</span>
-                                <a class="uk-accordion-title" href="#">向午粮品 手作料理</a>
+                            <li ><a class="uk-accordion-title"href="#"></a>
+                                <span>嘉義市 / 西區</span></br>
+                                    <h4>向午粮品 手作料理</h4>
                                 <div class="uk-accordion-content">
                                     <hr size="3" color="#411D00"> <!--中間分隔線-->
                                         <div  class="uk-card uk-card-default uk-card-body uk-margin-small">
@@ -80,21 +80,20 @@
                         <div class="cta-inner bg-faded text-center rounded" >
                         <ul uk-accordion>
                             <!-- class="uk-open" -->
-                            <li >
-                                <span>嘉義市 / 西區</span>
-                                <a class="uk-accordion-title" href="#">泰泰小姐</a>
+                            <li ><a class="uk-accordion-title"href="#"></a>
+                                <span>縣市 / 區域</span></br>
+                                    <h4>店名</h4>
                                 <div class="uk-accordion-content">
-                                    <hr size="3" color="#411D00"> <!--中間分隔線-->
+                                    <!-- <hr size="3" color="#411D00"> 中間分隔線 -->
                                         <div  class="uk-card uk-card-default uk-card-body uk-margin-small">
-                                            <a href="https://goo.gl/maps/iSRuPG33LDVbMTyz6" target="_blank">600嘉義市西區仁愛路105號</a>
-                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                                            <a href="地圖網址" target="_blank">地址</a>
                                         </div>
                                         <div class="uk-card uk-card-default uk-card-body uk-margin-small">
-                                             <a href="https://www.facebook.com/%E6%B3%B0%E6%B3%B0%E5%B0%8F%E5%A7%90-1081551008681596/?ref=bookmarks" target="_blank" class="uk-margin-small-right"><i class="fab fa-facebook-f"></i></a>
+                                             <a href="臉書網址" target="_blank" class="uk-margin-small-right"><i class="fab fa-facebook-f"></i></a>
                                         </div>
                                         <div class="uk-card uk-card-default uk-card-body uk-margin-small">
                                             <span class="uk-margin-small-right" uk-icon="reciver"></span>
-                                            <a href="tel:0967 130 005">0967 130 005</a>
+                                            <a href="tel:0979 570 668">電話</a>
                                         </div>
                                 </div> 
                             </li>
