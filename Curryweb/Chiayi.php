@@ -1,3 +1,16 @@
+<?php
+  require_once 'login.php';
+  
+  try
+  {
+    $pdo = new PDO($attr, $user, $pass, $opts);
+  }
+  catch (PDOException $e)
+  {
+    throw new PDOException($e->getMessage(), (int)$e->getCode());
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -45,64 +58,43 @@
         </nav>
         <!-- Section -->
         <section class="page-section cta">
-            <div class=" container">
-                <div class="row">
-                    <div class="col-xl-9 mx-auto">
-                       <!-- data-accordion-trigger="" <div class="cta-inner bg-faded text-center rounded"><span class="text-start">店名</span><span>嘉義市</span></div> -->
-                        <div class="cta-inner bg-faded text-center rounded" >
-                        <ul uk-accordion>
-                            <!-- class="uk-open" -->
-                            <li ><a class="uk-accordion-title"href="#"></a>
-                                <span>嘉義市 / 西區</span></br>
-                                    <h4>向午粮品 手作料理</h4>
-                                <div class="uk-accordion-content">
-                                    <hr size="3" color="#411D00"> <!--中間分隔線-->
-                                        <div  class="uk-card uk-card-default uk-card-body uk-margin-small">
-                                            <a href="https://goo.gl/maps/T45zC7GNoaerhCgn9" target="_blank">600024嘉義市西區建成街20號</a>
-                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
-                                        </div>
-                                        <div class="uk-card uk-card-default uk-card-body uk-margin-small">
-                                             <a href="https://www.facebook.com/%E5%90%91%E5%8D%88%E7%B2%AE%E5%93%81-110761128126965/" target="_blank" class="uk-margin-small-right"><i class="fab fa-facebook-f"></i></a>
-                                        </div>
-                                        <div class="uk-card uk-card-default uk-card-body uk-margin-small">
-                                            <span class="uk-margin-small-right" uk-icon="reciver"></span>
-                                            <a href="tel:0979 570 668">0979 570 668</a>
-                                        </div>
-                                </div> 
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-9 mx-auto">
-                       <!-- data-accordion-trigger="" <div class="cta-inner bg-faded text-center rounded"><span class="text-start">店名</span><span>嘉義市</span></div> -->
-                        <div class="cta-inner bg-faded text-center rounded" >
-                        <ul uk-accordion>
-                            <!-- class="uk-open" -->
-                            <li ><a class="uk-accordion-title"href="#"></a>
-                                <span>縣市 / 區域</span></br>
-                                    <h4>店名</h4>
-                                <div class="uk-accordion-content">
-                                    <!-- <hr size="3" color="#411D00"> 中間分隔線 -->
-                                        <div  class="uk-card uk-card-default uk-card-body uk-margin-small">
-                                            <a href="地圖網址" target="_blank">地址</a>
-                                        </div>
-                                        <div class="uk-card uk-card-default uk-card-body uk-margin-small">
-                                             <a href="臉書網址" target="_blank" class="uk-margin-small-right"><i class="fab fa-facebook-f"></i></a>
-                                        </div>
-                                        <div class="uk-card uk-card-default uk-card-body uk-margin-small">
-                                            <span class="uk-margin-small-right" uk-icon="reciver"></span>
-                                            <a href="tel:0979 570 668">電話</a>
-                                        </div>
-                                </div> 
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>   
-        </section>
+    <div class=" container">
+  <?php
+
+  $query  = "SELECT * FROM southern___chiayi";
+  $result = $pdo->query($query);
+  
+  while ($row = $result->fetch(PDO::FETCH_BOTH))
+  {
+    echo '<div class="row">';
+    echo '<div class="col-xl-9 mx-auto">';
+    echo '<div class="cta-inner bg-faded text-center rounded" >';
+    echo '<ul uk-accordion>';
+    echo '<li><a class="uk-accordion-title" href="#"></a>';
+    echo '<span>'. htmlspecialchars($row['region']).'</span></br>';
+    echo '<h4>'. htmlspecialchars($row['name'])    . '</h4><br>';
+    echo '<div class="uk-accordion-content">';
+    echo '<hr size="3" color="#411D00">';
+    echo '<div  class="uk-card uk-card-default uk-card-body uk-margin-small">';
+    echo '<a href="'.htmlspecialchars($row['addressweb']). '"' .'target="_blank">'.htmlspecialchars($row['address']) .'</a>';
+    echo '</div>';
+    echo '<div class="uk-card uk-card-default uk-card-body uk-margin-small">';
+    echo '<a href="'.htmlspecialchars($row['website']).'" target="_blank" class="uk-margin-small-right"><i class="fab fa-facebook-f"></i></a>';
+    echo '</div>';
+    echo '<div class="uk-card uk-card-default uk-card-body uk-margin-small">';
+    echo '<span class="uk-margin-small-right" uk-icon="reciver"></span>';
+    echo '<a href="tel:' .htmlspecialchars($row['phone']). '">'. htmlspecialchars($row['phone']) .'</a>';
+    echo '</div>';
+    echo '</div>';
+    echo '</li>';    
+    echo '</ul>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+  }
+?>
+</div>
+</section>
 
         <footer class="footer text-faded text-center py-5">
             <div class="container"><p class="m-0 small">Copyright &copy; CurryMap</p></div>

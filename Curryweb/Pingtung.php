@@ -20,7 +20,7 @@
         <script src="js/uikit-icons.min.js"></script>
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Curry Map-Penghu</title>
+        <title>Curry Map-Pingtung</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"> </script>
@@ -29,7 +29,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" /> 
-        <link href="css/uikit.css" rel="stylesheet" />
+        <link href="css/uikit.css"  rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>        
 
@@ -61,7 +61,7 @@
     <div class=" container">
   <?php
 
-  $query  = "SELECT * FROM southern___penghu";
+  $query  = "SELECT * FROM southern___pingtung";
   $result = $pdo->query($query);
   
   while ($row = $result->fetch(PDO::FETCH_BOTH))
