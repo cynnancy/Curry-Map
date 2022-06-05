@@ -52,6 +52,7 @@
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="Central.html">Central</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="Southern.html">Southern</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="Eastern.html">Eastern</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="comment.php">Dining Brief</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,39 +60,39 @@
         <!-- Section -->
         <section class="page-section cta">
     <div class=" container">
-  <?php
+    <?php
 
-  $query  = "SELECT * FROM southern___chiayi";
-  $result = $pdo->query($query);
-  
-  while ($row = $result->fetch(PDO::FETCH_BOTH))
-  {
-    echo '<div class="row">';
-    echo '<div class="col-xl-9 mx-auto">';
-    echo '<div class="cta-inner bg-faded text-center rounded" >';
-    echo '<ul uk-accordion>';
-    echo '<li><a class="uk-accordion-title" href="#"></a>';
-    echo '<span>'. htmlspecialchars($row['region']).'</span></br>';
-    echo '<h4>'. htmlspecialchars($row['name'])    . '</h4><br>';
-    echo '<div class="uk-accordion-content">';
-    echo '<hr size="3" color="#411D00">';
-    echo '<div  class="uk-card uk-card-default uk-card-body uk-margin-small">';
-    echo '<a href="'.htmlspecialchars($row['addressweb']). '"' .'target="_blank">'.htmlspecialchars($row['address']) .'</a>';
-    echo '</div>';
-    echo '<div class="uk-card uk-card-default uk-card-body uk-margin-small">';
-    echo '<a href="'.htmlspecialchars($row['website']).'" target="_blank" class="uk-margin-small-right"><i class="fab fa-facebook-f"></i></a>';
-    echo '</div>';
-    echo '<div class="uk-card uk-card-default uk-card-body uk-margin-small">';
-    echo '<span class="uk-margin-small-right" uk-icon="reciver"></span>';
-    echo '<a href="tel:' .htmlspecialchars($row['phone']). '">'. htmlspecialchars($row['phone']) .'</a>';
-    echo '</div>';
-    echo '</div>';
-    echo '</li>';    
-    echo '</ul>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-  }
+$query  = "SELECT * FROM southern___chiayi";
+$result = $pdo->query($query);
+
+while ($row = $result->fetch(PDO::FETCH_BOTH))
+{
+  echo '<div class="row">';
+  echo '<div class="col-xl-9 mx-auto">';
+  echo '<div class="cta-inner bg-faded text-center rounded" >';
+  echo '<ul uk-accordion>';
+  echo '<li><a class="uk-accordion-title" href="#"></a>';
+  echo '<span>'. htmlspecialchars($row['region']).'</span></br>';
+  echo '<h4>'. htmlspecialchars($row['name']). '  ★'. htmlspecialchars($row['rating']). '</h4><br>';
+  echo '<div class="uk-accordion-content">';
+  echo '<hr size="3" color="#411D00">';
+  echo '<div  class="uk-card uk-card-default uk-card-body uk-margin-small">';
+  echo '<a href="'.htmlspecialchars($row['map']). '"' .'target="_blank">'.htmlspecialchars($row['address']) .'</a>';
+  echo '</div>';
+  echo '<div class="uk-card uk-card-default uk-card-body uk-margin-small">';
+  echo '<a href="'.htmlspecialchars($row['website']).'" target="_blank" class="uk-margin-small-right"><i class="fab fa-facebook-f"></i></a>';
+  echo '</div>';
+  echo '<div class="uk-card uk-card-default uk-card-body uk-margin-small">';
+  echo '<span class="uk-margin-small-right" uk-icon="reciver"></span>';
+  echo '<a href="tel:' .htmlspecialchars($row['phone']). '">'. htmlspecialchars($row['phone']) .'</a>';
+  echo '</div>';
+  echo '</div>';
+  echo '</li>';    
+  echo '</ul>';
+  echo '</div>';
+  echo '</div>';
+  echo '</div>';
+}
 ?>
 </div>
 </section>

@@ -39,7 +39,7 @@
   a:hover,
   .uk-link:hover,
   .uk-link-toggle:hover .uk-link {
-    color: #0f6ecd;
+    color: #734c14;
     text-decoration: underline;
   }
   /* Text-level semantics
@@ -384,7 +384,7 @@
     padding: 10px;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
-    background: #fff;
+    /* background: #fff; */
   }
   pre code {
     font-family: "Kosugi Maru", Consolas, monaco, monospace;
@@ -401,7 +401,7 @@
    ========================================================================== */
   ::selection {
     background: rgb(225, 213, 168);
-    color: #fff;
+    /* color: #fff; */
     text-shadow: none;
   }
   /* HTML5 elements
@@ -3181,7 +3181,7 @@
   .uk-comment-meta {
     font-size: 0.875rem;
     line-height: 1.4;
-    color: #999;
+    color: #734c14;
   }
   /* Avatar
    ========================================================================== */
@@ -3218,7 +3218,7 @@
    ========================================================================== */
   .uk-comment-primary {
     padding: 30px;
-    background-color: #f8f8f8;
+    background-color: #C6B496;
   }
   /* ========================================================================
      Component: Search
@@ -10486,7 +10486,7 @@
   .uk-offcanvas-bar .uk-button-default {
     background-color: transparent;
     color: #fff;
-    border-color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255);
   }
   .uk-light .uk-button-default:hover,
   .uk-section-primary:not(.uk-preserve-color) .uk-button-default:hover,
@@ -10844,7 +10844,7 @@
   .uk-card-secondary > :not([class*='uk-card-media']) .uk-label,
   .uk-overlay-primary .uk-label,
   .uk-offcanvas-bar .uk-label {
-    background-color: #fff;
+    background-color: #fffeec;
     color: #666;
   }
   .uk-light .uk-article-meta,
